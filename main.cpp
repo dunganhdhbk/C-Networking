@@ -28,7 +28,7 @@ int main() {
     hints.ai_socktype = SOCK_STREAM;
     hints.ai_flags = AI_PASSIVE;
 
-    if ((status = getaddrinfo(NULL, "030000", &hints, &servinfo))  != 0) {
+    if ((status = getaddrinfo("www.example.com", "3409", &hints, &servinfo))  != 0) {
         fprintf(stderr, "getaddrinfo error: %s\n", gai_strerror(status));
         exit(1);
     }
