@@ -4,7 +4,7 @@ project(CNetwork)
 set(CMAKE_CXX_STANDARD 17)
 
 add_executable(CNetwork main.cpp
-        ip_address.cpp
+        tcp_connect/fail_.cpp
         show_ip.cpp
-        socket.cpp
+        tcp_connect/socket.cpp
 )
